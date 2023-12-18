@@ -1,0 +1,155 @@
+@font-face {
+  font-family: poppins;
+  src: url(./fonts/Agbalumo-Regular.ttf);
+}
+.logo {
+  color: white;
+  font-size: 55px;
+  font-family: poppins;
+}
+.port {
+  background: linear-gradient(45deg, #f06, #3cf);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.li {
+  color: white;
+  font-size: 18px;
+  font-family: poppins;
+  margin-right: 5px;
+  transition: 1s ease;
+}
+.li:hover {
+  background: linear-gradient(45deg, #f06, #3cf);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+}
+.li:visited {
+  background: linear-gradient(45deg, #f06, #3cf);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+}
+.home {
+  background: linear-gradient(45deg, #f06, #3cf);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+}
+/* navbar end */
+/* HOME SECTION */
+
+.home-heading {
+  color: white;
+  font-family: poppins;
+  font-size: 25px;
+}
+
+.home-name {
+  color: white;
+  font-family: poppins;
+  font-size: 50px;
+  background: linear-gradient(45deg, #f06, #3cf);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.home-content {
+  color: white;
+  font-family: poppins;
+  font-size: 25px;
+}
+.hire {
+  color: white;
+  font-family: poppins;
+  font-size: 20px;
+  letter-spacing: 1px;
+  z-index: 1;
+  border-radius: 40px;
+  height: 48px;
+  width: 180px;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  position: relative;
+  text-decoration: none;
+  border: none;
+}
+.hire::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset: 0;
+  background: linear-gradient(45deg, #f06, #3cf, #f06);
+  background-size: 200%;
+  background-position: 0 0;
+  z-index: -1;
+  border-radius: 40px;
+  filter: blur(5px);
+  transition: 0.3s ease;
+}
+.hire:hover::before {
+  background-position: 100% 0;
+}
+
+.hire::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset: 0;
+  background: linear-gradient(45deg, #f06, #3cf, #f06);
+  background-size: 200%;
+  background-position: 0 0;
+  z-index: -1;
+  border-radius: 40px;
+  transition: 0.5s ease;
+}
+.hire:hover::after {
+  background-position: 100% 0;
+}
+.fa-brands {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4%;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, #f06, #3cf);
+  border-radius: 50%;
+  z-index: 1;
+  text-decoration: none;
+  margin-right: 4px;
+}
+.fa-twi::after {
+  margin-left: -78%;
+}
+.fa-brands::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  margin-left: -69%;
+  margin-top: -57%;
+  border-radius: 50%;
+  transform: scale(0.88);
+  z-index: -1;
+  transition: 0.5s ease;
+}
+.fa-brands:hover::after {
+  transform: scale(0);
+}
+@media screen and (max-width: 768px) {
+  .fa-brands {
+    padding-top: 5%;
+  }
+  .fa-brands::after {
+    margin-top: -46%;
+  }
+  .fa-twi::after {
+    margin-left: -74%;
+  }
+}
