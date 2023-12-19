@@ -239,17 +239,53 @@
   text-align: start;
   opacity: 0;
   animation: slideleft 2s ease forwards;
-  animation-delay: 1.5s;
+  animation-delay: 1.7s;
 }
 
 .progress-bar {
   background: linear-gradient(45deg, #f06, #3cf);
   animation: slideleft 2s ease forwards;
-  animation-delay: 1.2s;
-  /* -webkit-text-fill-color: transparent; */
-  /* -webkit-background-clip: text; */
+  animation-delay: 3s;
 }
+/* contact us */
 
+.contact-me-heading {
+  background: linear-gradient(45deg, #f06, #3cf);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: poppins;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-content {
+  color: white;
+  font-family: poppins;
+}
+.contact-inp {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  width: 30%;
+  height: 10%;
+  padding: 15px 10px;
+  padding-right: 40px;
+}
+.phone-inp {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  width: 60%;
+  height: 10%;
+  padding: 15px 10px;
+  padding-right: 40px;
+}
+.text-area {
+  border-radius: 10px;
+  border: none;
+  padding-left: 2%;
+  padding-right: 28%;
+}
 /* animation keyframes 
  */
 @keyframes slidetop {
@@ -282,7 +318,6 @@
     transform: translateX(0);
   }
 }
-
 @keyframes slideleft {
   0% {
     opacity: 0;
@@ -338,5 +373,41 @@
   }
   .image .home-pic {
     max-width: 300px;
+  }
+  .home-img .glowing-circle::after {
+    content: "";
+    position: absolute;
+    width: 270px;
+    height: 300px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .glowing-circle .img-span {
+    position: absolute;
+    width: 82%;
+    height: 82%;
+    background: linear-gradient(#f06, #3cf);
+    border-radius: 50%;
+    animation: circlerotate 7s linear infinite;
+  }
+  .glowing-circle .img-span {
+    filter: blur(5px);
+  }
+  .glowing-circle .image {
+    position: relative;
+    height: 300px;
+    width: 270px;
+
+    z-index: 1;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .image .home-pic {
+    max-width: 270px;
+    object-fit: cover;
+  }
+  
+  .text-area {
+    padding: 0 0;
   }
 }
