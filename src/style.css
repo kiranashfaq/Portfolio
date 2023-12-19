@@ -213,6 +213,36 @@
   max-width: 350px;
   object-fit: cover;
 }
+/* about me sectiion */
+
+.about-me {
+  color: white;
+  font-family: poppins;
+  font-size: 55px;
+  text-align: center;
+}
+.about-heading {
+  font-size: 40px;
+}
+.about-content {
+  color: white;
+  /* font-family: poppins;
+   */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  opacity: 0;
+  animation: slidebottom 1s ease forwards;
+  animation-delay: 1s;
+}
+.bar-heading {
+  color: white;
+  font-family: poppins;
+  text-align: start;
+}
+.progress-bar {
+  background: linear-gradient(45deg, #f06, #3cf);
+  /* -webkit-text-fill-color: transparent; */
+  /* -webkit-background-clip: text; */
+}
 
 /* animation keyframes 
  */
@@ -299,5 +329,8 @@
   }
   .home-img .glowing-circle {
     margin-top: 50px;
+  }
+  .image .home-pic {
+    max-width: 300px;
   }
 }
