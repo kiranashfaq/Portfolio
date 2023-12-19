@@ -128,7 +128,7 @@
 .hire:hover::after {
   background-position: 100% 0;
 }
-.fa-brands {
+.fa-brande {
   position: relative;
   display: flex;
   justify-content: center;
@@ -148,7 +148,7 @@
 .fa-twi::after {
   margin-left: -78%;
 }
-.fa-brands::after {
+.fa-brande::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -161,7 +161,7 @@
   z-index: -1;
   transition: 0.5s ease;
 }
-.fa-brands:hover::after {
+.fa-brande:hover::after {
   transform: scale(0);
 }
 .home-img {
@@ -286,6 +286,15 @@
   padding-left: 2%;
   padding-right: 28%;
 }
+.hr {
+  color: rgb(80, 63, 63);
+  margin-top: 10px;
+}
+.end-para{
+  color: white;
+  font-family: poppins;
+  text-align: center;
+}
 /* animation keyframes 
  */
 @keyframes slidetop {
@@ -406,7 +415,7 @@
     max-width: 270px;
     object-fit: cover;
   }
-  
+
   .text-area {
     padding: 0 0;
   }
