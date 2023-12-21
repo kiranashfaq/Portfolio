@@ -241,13 +241,13 @@
   text-align: start;
   opacity: 0;
   animation: slideleft 2s ease forwards;
-  animation-delay: 1.7s;
+  animation-delay: 1.9s;
 }
 
 .progress-bar {
   background: linear-gradient(45deg, #f06, #3cf);
-  animation: slideleft 2s ease forwards;
-  animation-delay: 3s;
+  animation: slideright2 2s ease-in-out backwards;
+  animation-delay: 4s;
 }
 /* contact us */
 
@@ -321,6 +321,16 @@
   0% {
     opacity: 0;
     transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideright2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
   }
   100% {
     opacity: 1;
